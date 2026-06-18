@@ -735,3 +735,14 @@ grid-template-columns:1fr;
 }
 
 }
+@media(max-width:768px){
+
+.ventures{
+padding:100px 20px;
+}
+
+.ventures-grid{
+grid-template-columns:1fr;
+}
+
+}
