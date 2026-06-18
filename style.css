@@ -1,3 +1,11 @@
-body{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    background:#081D52;
+    color:#C4A446;
+    font-family:Arial,sans-serif;
 }
