@@ -21,18 +21,18 @@ header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:35px 90px;
+padding:30px 90px;
 position:sticky;
 top:0;
-background:rgba(8,29,82,.92);
-backdrop-filter:blur(12px);
-z-index:999;
+z-index:1000;
+background:rgba(8,29,82,.95);
+backdrop-filter:blur(15px);
 }
 
 .logo{
-color:#C4A446;
 font-size:42px;
 font-weight:800;
+color:#C4A446;
 }
 
 nav{
@@ -41,8 +41,8 @@ gap:40px;
 }
 
 nav a{
-text-decoration:none;
 color:#FFFFFF;
+text-decoration:none;
 font-size:16px;
 font-weight:500;
 transition:.3s;
@@ -55,7 +55,7 @@ color:#C4A446;
 /* HERO */
 
 .hero{
-min-height:90vh;
+min-height:100vh;
 display:grid;
 grid-template-columns:1.1fr .9fr;
 align-items:center;
@@ -66,22 +66,22 @@ padding:60px 90px;
 .founder-tag{
 color:#C4A446;
 letter-spacing:5px;
-margin-bottom:25px;
-font-size:18px;
+font-size:16px;
 font-weight:600;
+margin-bottom:25px;
 }
 
 .hero h1{
 font-family:'Playfair Display',serif;
 font-size:110px;
-line-height:.92;
+line-height:.9;
 margin-bottom:30px;
 }
 
 .hero-description{
-font-size:26px;
+font-size:24px;
 line-height:1.8;
-max-width:680px;
+max-width:700px;
 margin-bottom:40px;
 }
 
@@ -93,37 +93,51 @@ gap:20px;
 .primary-btn{
 background:#C4A446;
 color:#081D52;
-border:none;
 padding:18px 40px;
+text-decoration:none;
 font-weight:700;
-cursor:pointer;
+border-radius:8px;
+transition:.3s;
+}
+
+.primary-btn:hover{
+transform:translateY(-4px);
 }
 
 .secondary-btn{
-background:transparent;
 border:1px solid #C4A446;
 color:#FFFFFF;
 padding:18px 40px;
-cursor:pointer;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.secondary-btn:hover{
+background:#C4A446;
+color:#081D52;
 }
 
 .hero-image{
 display:flex;
 justify-content:center;
+align-items:center;
 }
 
 .image-frame{
-padding:12px;
-border:1px solid rgba(196,164,70,.5);
+padding:10px;
 border-radius:30px;
-box-shadow:0 25px 80px rgba(0,0,0,.35);
+border:1px solid rgba(196,164,70,.6);
+box-shadow:
+0 30px 80px rgba(0,0,0,.4),
+0 0 50px rgba(196,164,70,.15);
 }
 
 .hero-image img{
-width:480px;
+width:500px;
 max-width:100%;
-border-radius:22px;
 display:block;
+border-radius:24px;
 }
 
 /* COMMON */
@@ -134,9 +148,9 @@ margin-bottom:70px;
 
 .section-heading span{
 color:#C4A446;
-font-size:14px;
 letter-spacing:4px;
-font-weight:600;
+font-size:14px;
+font-weight:700;
 }
 
 .section-heading h2{
@@ -144,6 +158,7 @@ font-family:'Playfair Display',serif;
 font-size:64px;
 margin-top:15px;
 max-width:800px;
+line-height:1.1;
 }
 
 /* STORY */
@@ -163,6 +178,12 @@ background:rgba(255,255,255,.03);
 border:1px solid rgba(255,255,255,.08);
 padding:40px;
 border-radius:24px;
+transition:.3s;
+}
+
+.story-card:hover{
+transform:translateY(-8px);
+border-color:#C4A446;
 }
 
 .story-card h3{
@@ -202,18 +223,81 @@ transition:.3s;
 }
 
 .philosophy-card:hover{
-border-color:#C4A446;
 transform:translateY(-8px);
+border-color:#C4A446;
 }
 
 .philosophy-card h3{
 color:#C4A446;
-margin-bottom:20px;
 font-size:28px;
+margin-bottom:20px;
 }
 
 .philosophy-card p{
 line-height:1.9;
+color:#d8d8d8;
+}
+
+/* EXPERTISE */
+
+.expertise{
+padding:140px 90px;
+}
+
+.expertise-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.expertise-card{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+padding:40px;
+border-radius:24px;
+transition:.3s;
+}
+
+.expertise-card:hover{
+transform:translateY(-8px);
+border-color:#C4A446;
+}
+
+.expertise-card h3{
+color:#C4A446;
+font-size:26px;
+margin-bottom:20px;
+line-height:1.3;
+}
+
+.expertise-card p{
+line-height:1.8;
+color:#d8d8d8;
+}
+
+/* CONTACT */
+
+.contact{
+padding:140px 90px;
+}
+
+.contact-box{
+max-width:800px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+padding:50px;
+border-radius:24px;
+}
+
+.contact-box h3{
+font-size:40px;
+margin-bottom:20px;
+color:#C4A446;
+}
+
+.contact-box p{
+font-size:18px;
+line-height:2;
 color:#d8d8d8;
 }
 
@@ -235,19 +319,28 @@ justify-content:center;
 grid-template-columns:repeat(2,1fr);
 }
 
+.expertise-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.section-heading h2{
+font-size:52px;
+}
+
 }
 
 @media(max-width:768px){
 
 header{
+padding:20px;
 flex-direction:column;
 gap:20px;
-padding:20px;
 }
 
 nav{
 flex-wrap:wrap;
 justify-content:center;
+gap:15px;
 }
 
 .hero{
@@ -267,17 +360,24 @@ flex-direction:column;
 }
 
 .story,
-.philosophy{
+.philosophy,
+.expertise,
+.contact{
 padding:100px 20px;
 }
 
 .story-grid,
-.philosophy-grid{
+.philosophy-grid,
+.expertise-grid{
 grid-template-columns:1fr;
 }
 
 .section-heading h2{
 font-size:38px;
+}
+
+.hero-image img{
+width:300px;
 }
 
 }
