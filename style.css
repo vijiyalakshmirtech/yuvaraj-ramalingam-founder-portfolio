@@ -381,3 +381,124 @@ width:300px;
 }
 
 }
+/* =====================================
+LEADERSHIP
+===================================== */
+
+.leadership{
+padding:140px 90px;
+}
+
+.leadership-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+
+.leadership-card{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+padding:35px;
+border-radius:24px;
+transition:.3s;
+}
+
+.leadership-card:hover{
+transform:translateY(-8px);
+border-color:#C4A446;
+}
+
+.leadership-card h3{
+color:#C4A446;
+font-size:22px;
+margin-bottom:15px;
+}
+
+.leadership-card p{
+line-height:1.8;
+color:#d8d8d8;
+}
+
+/* VISION */
+
+.vision,
+.mission,
+.brand-statement{
+padding:140px 90px;
+}
+
+.vision-box,
+.mission-box,
+.statement-box{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+padding:60px;
+border-radius:24px;
+max-width:1000px;
+}
+
+.vision-box p,
+.mission-box p,
+.statement-box p{
+font-size:22px;
+line-height:2;
+color:#d8d8d8;
+}
+
+/* SIGNATURE */
+
+.signature{
+padding:140px 90px;
+text-align:center;
+}
+
+.signature-box h2{
+font-family:'Playfair Display',serif;
+font-size:70px;
+margin-bottom:20px;
+}
+
+.signature-box p{
+font-size:24px;
+margin-bottom:20px;
+color:#d8d8d8;
+}
+
+.signature-box span{
+color:#C4A446;
+font-size:20px;
+}
+
+@media(max-width:1200px){
+
+.leadership-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.leadership,
+.vision,
+.mission,
+.brand-statement,
+.signature{
+padding:100px 20px;
+}
+
+.leadership-grid{
+grid-template-columns:1fr;
+}
+
+.vision-box,
+.mission-box,
+.statement-box{
+padding:35px;
+}
+
+.signature-box h2{
+font-size:42px;
+}
+
+}
