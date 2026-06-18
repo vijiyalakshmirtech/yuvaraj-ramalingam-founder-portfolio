@@ -725,3 +725,10 @@ margin-bottom:10px;
 .stat-card p{
 color:#d8d8d8;
 }
+@media(max-width:768px){
+
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+}
