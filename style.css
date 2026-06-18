@@ -660,3 +660,31 @@ line-height:2;
 margin-bottom:20px;
 color:#FFFFFF;
 }
+/* ==========================
+CURRENT FOCUS
+========================== */
+
+.focus{
+padding:140px 90px;
+}
+
+.focus-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.focus-card{
+padding:50px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+border-radius:24px;
+font-size:24px;
+font-weight:600;
+transition:.3s;
+}
+
+.focus-card:hover{
+transform:translateY(-8px);
+border-color:#C4A446;
+}
