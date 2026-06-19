@@ -41,10 +41,10 @@ background:rgba(8,29,82,.95);
 backdrop-filter:blur(15px);
 }
 
-.logo{
-font-size:42px;
-font-weight:800;
-color:#C4A446;
+.logo img{
+height:70px;
+width:auto;
+display:block;
 }
 
 nav{
