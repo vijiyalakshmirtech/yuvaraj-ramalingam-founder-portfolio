@@ -141,7 +141,7 @@ align-items:center;
 .image-frame{
 padding:10px;
 border-radius:30px;
-border:1px solid rgba(196,164,70,.6);
+border:1px solid rgba(244,254,255,.12);
 box-shadow:
 0 30px 80px rgba(0,0,0,.4),
 0 0 50px rgba(196,164,70,.15);
@@ -866,7 +866,7 @@ content:'';
 position:absolute;
 width:500px;
 height:500px;
-background:rgba(196,164,70,.12);
+background:rgba(14,47,118,.25);
 filter:blur(120px);
 top:100px;
 left:-100px;
