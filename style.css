@@ -931,3 +931,17 @@ margin-bottom:24px;
     color:#c4a446;
     font-weight:600;
 }
+.hero-name{
+margin-top:25px;
+margin-bottom:12px;
+font-size:14px;
+font-weight:600;
+letter-spacing:5px;
+text-transform:uppercase;
+color:#c4a446;
+}
+
+.hero-title{
+line-height:0.9;
+letter-spacing:-2px;
+}
