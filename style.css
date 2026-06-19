@@ -1,3 +1,7 @@
+@font-face{
+font-family:'GCMagnu';
+src:url('assets/fonts/GCMagnuDemo-SemiBold-BF69b9235e7ef1e.ttf');
+}
 *{
 margin:0;
 padding:0;
