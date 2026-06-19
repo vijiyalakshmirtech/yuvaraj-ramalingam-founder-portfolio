@@ -923,3 +923,11 @@ background:rgba(255,255,255,0.03);
 backdrop-filter:blur(12px);
 margin-bottom:24px;
 }
+.hero-name{
+    margin-top:20px;
+    font-size:14px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#c4a446;
+    font-weight:600;
+}
