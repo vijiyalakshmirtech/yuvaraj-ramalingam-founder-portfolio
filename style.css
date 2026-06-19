@@ -46,9 +46,25 @@ backdrop-filter:blur(15px);
 height:60px;
 }
 
-nav{
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
 display:flex;
-gap:40px;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 60px;
+
+z-index:1000;
+
+background:rgba(8,29,82,0.6);
+
+backdrop-filter:blur(20px);
+
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 nav a{
